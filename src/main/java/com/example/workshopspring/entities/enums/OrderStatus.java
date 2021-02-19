@@ -4,7 +4,7 @@ public enum OrderStatus {
 
 	WAITING_PAYMENT(1),
 	PAID(2),
-	SHIPPED(3), 
+	SHIPPED(3),
 	DELIVERED(4),
 	CANCELED(5);
 
@@ -24,7 +24,6 @@ public enum OrderStatus {
 				return value;
 			}
 		}
-		throw new IllegalArgumentException("Invalid order status code");
+		throw new IllegalArgumentException("Invalid OrderStatus code");
 	}
-
 }
